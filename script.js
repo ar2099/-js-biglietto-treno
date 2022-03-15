@@ -32,6 +32,12 @@ let costoBiglietto = costoKm * km * variabileEta;
 
 console.log(costoBiglietto)
 
+// parte grafica 
+
+document.getElementById("vEta").innerHTML= ` ${eta} ${" anni."} `;
+document.getElementById("vKm").innerHTML = ` ${km} ${" chilometri."} `;
+document.getElementById("vBiglietto").innerHTML = ` ${costoBiglietto} ${"€."} `;
+
 
 
 
