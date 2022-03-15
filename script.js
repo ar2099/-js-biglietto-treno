@@ -32,11 +32,13 @@ let costoBiglietto = costoKm * km * variabileEta;
 
 console.log(costoBiglietto)
 
+let costoBigliettoArrotondato = (Math.round(costoBiglietto * 10) / 10)
+
 // parte grafica 
 
 document.getElementById("vEta").innerHTML= ` ${eta} ${" anni."} `;
 document.getElementById("vKm").innerHTML = ` ${km} ${" chilometri."} `;
-document.getElementById("vBiglietto").innerHTML = ` ${costoBiglietto} ${"€."} `;
+document.getElementById("vBiglietto").innerHTML = ` ${costoBigliettoArrotondato} ${"€."} `;
 
 
 
