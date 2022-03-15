@@ -20,12 +20,15 @@ let variabileEta;
 
 if (eta < 18) {
     variabileEta = 0.8;
+    document.getElementById("vFrase").innerHTML = "Essendo minorenne, il tuo biglietto è scontato del 20%.";
 
 } else if (eta >= 65) {
     variabileEta = 0.6;
+    document.getElementById("vFrase").innerHTML = "Essendo +65 anni, il tuo biglietto è scontato del 40%.";
 
 } else {
     variabileEta = 1;
+    document.getElementById("vFrase").innerHTML = "Sul tuo biglietto non sono previsti sconti";
 }
 
 let costoBiglietto = costoKm * km * variabileEta;
