@@ -18,4 +18,14 @@ let costoBiglietto = costoKm * km * variabileEta;
 
 console.log(costoBiglietto)
 
-if
+if (eta < 18) {
+    variabileEta = 0.8;
+}
+
+if (eta >= 65) {
+    variabileEta = 0.6;
+}
+
+if ((eta >= 18) && (eta < 65)) {
+    variabileEta = 1;
+}
