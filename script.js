@@ -29,3 +29,5 @@ if (eta >= 65) {
 if ((eta >= 18) && (eta < 65)) {
     variabileEta = 1;
 }
+
+document.write(costoBiglietto)
